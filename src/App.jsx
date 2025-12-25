@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import aktan from "./assets/aktan.png"
+import gul from "./assets/gul.png"
 import cake from "./assets/pngwing.com.png"
 import Congratulations from "./components/Congratulations"
 import './App.css'
@@ -16,11 +17,11 @@ function App() {
   <div className="max-w-5xl w-full bg-linear-to-br from-pink-200 to-rose-400 rounded-3xl p-10 shadow-2xl  grid grid-cols-1 md:grid-cols-2 gap-10 border border-white/50">
 
     <div className="flex items-center justify-center flex-col">
-     {showCard && <p className="text-2xl p-1.5 bg-linear-to-r from-rose-700 to-pink-500 font-extrabold bg-clip-text text-transparent">click aktans profile to animation</p>}
+     {showCard && <p className="text-2xl p-1.5 bg-linear-to-r from-rose-700 to-pink-500 font-extrabold bg-clip-text text-transparent">click her profile to animation</p>}
 { showCard ? (
   
     <img
-      src={aktan}
+      src={gul}
       onClick={() => setSpin(!spin)}
       className={`h-[500px] transition-transform duration-700 drop-shadow-fuchsia-300 overflow-x-hidden ${ spin ? "animate-spin" : "" }`}/>) : 
       (<img src={cake} className="w-full drop-shadow-xl transition-transform duration-200 hover:scale-[1.08]"/> )}
